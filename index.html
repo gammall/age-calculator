@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <div class="card">
+      <div class="input-wrapper">
+        <div>
+          <label>Day</label>
+          <input type="number" min="1" max="31" placeholder="DD" id="day"/>
+        </div>
+        <div>
+          <label>Month</label>
+          <input type="number" min="1" max="12" placeholder="MM" id="month"/>
+        </div>        
+        <div>
+          <label>Year</label>
+          <input type="number" placeholder="YYYY" id="year"/>
+        </div>
+        <button type="submit" onclick="result()">Submit</button>
+        </div>
+        <hr>
+          <div class="result-wrapper">
+            <h1><span id="years"></span> years</h1>
+            <h1><span id="months"></span> years</h1>
+            <h1><span id="days"></span> years</h1>
+          </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
